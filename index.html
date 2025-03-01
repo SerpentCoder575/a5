@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Board</title>
+<style>
+  body{
+    background-color: #F4F7FF;
+  }
+</style>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- tail ui -->
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  
+</head>
+<body class=" ">
+
+  <!-- header section -->
+  <header class="mt-6">
+  <div class="container mx-auto navbar bg-[#FFFFFF] shadow-sm rounded-2xl">
+  <div class="flex-1">
+    <h1 class="text-4xl flex gap-3 p-4 ">
+  <img src="assets/logo.png" alt="">
+     <span>Dev<span class="font-bold">Board</span></span></h1>
+  </div>
+    <div class="">
+       <ul class="menu flex-row">
+          
+            <div class="flex-1 rounded-2xl bg-[#F4F7FF]">
+        <h1 class="text-2xl flex gap-3 p-4 ">
+      
+          <img src="assets/checkbox.png" alt="">
+<div class="count">
+          <span id="ct" class="font-bold">23</span>
+</div>
+        </h1>
+      </div>
+
+           <li class="mt-2"><a id="themechng"><img src="assets/theme-btn.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+
+
+<section class="container mx-auto my-7 ">  <!-- task section -->
+
+<div class="grid grid-cols-5 gap-4 "><!-- main container div -->
+
+<div class="col-span-4  rounded-2xl bg-[#FFFFFF] p-5"><!-- task div -->
+ 
+  <div class="grid grid-cols-4 gap-4"><!--upper part div  -->
+    
+<div class="flex justify-center rounded-xl bg-[#F4F7FF] gap-6 "> <!-- taskNum -->
+  <div class="mt-4 ">   <!-- img -->
+<div class="rounded-full p-4 bg-white" >
+ <img  src="assets/checkbox.png" alt="">
+</div>
+</div>
+ <div class="grid mt-3">
+ <h1 class="text-base font-medium">Task Assigned <br>
+
+
+<div class="count">
+  <span class="font-bold text-3xl">0</span>
+<span id="rt" class="font-bold text-3xl">5</span>
+</div>
+</h1>
+</div>
+</div>
+
+
+<div id="d"  class="flex p-2 gap-2 col-span-2   rounded-xl bg-linear-to-r from-[#3752FD] to-[#9BA8F8]"><!-- disc -->
+
+<img class="ml-6" src="assets/board.png" alt=""> 
+
+<p class="font-medium text-2xl text-[#FFFFFF] ml-10">Discover Something <br> New Today!</p>
+
+</div>
+
+
+<div class="flex justify-center  gap-6 bg-[#F4F7FF] rounded-xl"> <!-- date -->
+  <div class="mt-4">   <!-- img -->
+ <div class="bg-white rounded-full p-4">
+ <img  src="assets/calender.png" alt="">
+</div>
+</div>
+ <div class="grid mt-4">
+<h1 class="font-normal text-2xl"> <span id="day"></span>, <br>
+    <span id="date" class="font-bold text-2xl"></span> </h1> 
+
+
+
+</div>
+</div>
+
+  </div>
+
+
+<div class="grid grid-cols-3 gap-7 my-12"><!-- lower part div -->
+
+<div class="tc rounded-2xl grid justify-center gap-4 pt-4 pb-4 bg-[#F4F7FF]">
+
+  <div class="rounded-lg bg-[#FFFFFF] text-center w-20"><h5 class="font-normal text-base ">ShopEase</h5></div>
+  
+<h1  class="tt  text-2xl font-medium">Fix Mobile Button Issue </h1>
+<div class="rounded-lg bg-[#FFFFFF]"><p class="text-base font-normal">Debug using Chrome DevTools <br>, check for overlapping ...</p></div>
+
+<div class="flex gap-10">  <!-- lower part -->
+<p>
+ <span class="text-sm font-normal">Deadline</span><br>
+  <span class="text-base font-medium">21 March 2025</span>
+</p>
+
+<button  class="cb btn bg-[#3752FD] rounded-lg font-medium text-[#FFFFFF]">Completed</button>
+</div>
+</div>
+
+<div class="tc rounded-2xl bg-[#F4F7FF] grid justify-center gap-4 pt-4 pb-4">
+
+  <div class="rounded-lg bg-[#FFFFFF] text-center w-20"><h5 class="font-normal text-base ">CloudSync</h5></div>
+  
+<h1  class="tt text-2xl font-medium">Add Dark Mode</h1>
+<div class="rounded-lg bg-[#FFFFFF]"><p class="text-base font-normal">Store the user's preference in <br> localStorage, update CSS ...</p></div>
+
+<div class="flex gap-10">  <!-- lower part -->
+<p>
+ <span class="text-sm font-normal">Deadline</span><br>
+  <span class="text-base font-medium">21 March 2025</span>
+</p>
+
+<button  class="cb btn bg-[#3752FD] rounded-lg font-medium text-[#FFFFFF]">Completed</button>
+</div>
+</div>
+
+<div class="tc rounded-2xl bg-[#F4F7FF] grid justify-center gap-4 pt-4 pb-4">
+
+  <div class="rounded-lg bg-[#FFFFFF] text-center w-20"><h5 class="font-normal text-base ">SwiftPay</h5></div>
+  
+<h1  class="tt text-2xl font-medium">Optimize  Home page </h1>
+<div class="rounded-lg bg-[#FFFFFF]"><p class="text-base font-normal">Debug using Chrome DevTools <br>, check for overlapping ...</p></div>
+
+<div class="flex gap-10">  <!-- lower part -->
+<p>
+ <span class="text-sm font-normal">Deadline</span><br>
+  <span class="text-base font-medium">21 March 2025</span>
+</p>
+
+<button  class="cb btn bg-[#3752FD] rounded-lg font-medium text-[#FFFFFF]">Completed</button>
+</div>
+</div>
+
+
+
+<div class="tc rounded-2xl bg-[#F4F7FF] grid justify-center gap-4 pt-4 pb-4">
+
+  <div class="rounded-lg bg-[#FFFFFF] text-center w-16"><h5 class="font-normal text-base ">Meta</h5></div>
+  
+<h1  class="tt text-2xl font-medium">Add new emoji 🤲</h1>
+<div class="rounded-lg bg-[#FFFFFF]"><p class="text-base font-normal">Debug using Chrome DevTools <br>, check for overlapping ...</p></div>
+
+<div class="flex gap-10">  <!-- lower part -->
+<p>
+ <span class="text-sm font-normal">Deadline</span><br>
+  <span class="text-base font-medium">21 March 2025</span>
+</p>
+
+<button  class=" cb btn bg-[#3752FD] rounded-lg font-medium text-[#FFFFFF]">Completed</button>
+</div>
+</div>
+
+
+
+<div class="tc rounded-2xl bg-[#F4F7FF] grid justify-center gap-4 pt-4 pb-4">
+
+  <div class="rounded-lg bg-[#FFFFFF] w-24 text-center">
+    <h5 class="font-normal text-base ">Google LLC</h5></div>
+  
+<h1  class="tt text-2xl font-medium">Integrate OpenAI API  </h1>
+<div class="rounded-lg bg-[#FFFFFF]"><p class="text-base font-normal">Debug using Chrome DevTools <br>, check for overlapping ...</p></div>
+
+<div class="flex gap-10">  <!-- lower part -->
+<p>
+ <span class="text-sm font-normal">Deadline</span><br>
+  <span class="text-base font-medium">21 March 2025</span>
+</p>
+
+<button  class=" cb btn bg-[#3752FD] rounded-lg font-medium text-[#FFFFFF]">Completed</button>
+</div>
+</div>
+
+
+<div class="tc rounded-2xl bg-[#F4F7FF] grid justify-center gap-4 pt-4 pb-4">
+
+  <div class="rounded-lg bg-[#FFFFFF] text-center w-20"><h5 class="font-normal text-base ">Glassdoar</h5></div>
+  
+<h1 class="tt text-2xl font-medium">Improve Job searching  </h1>
+<div class="rounded-lg bg-[#FFFFFF]"><p class="text-base font-normal">Debug using Chrome DevTools <br>, check for overlapping ...</p></div>
+
+<div class="flex gap-10">  <!-- lower part -->
+<p>
+ <span class="text-sm font-normal">Deadline</span><br>
+  <span class="text-base font-medium">21 March 2025</span>
+</p>
+
+<button  class=" cb  btn  bg-[#3752FD] rounded-lg font-medium text-[#FFFFFF]">Completed</button>
+</div>
+</div>
+
+
+  
+</div><!-- lower div ender -->
+
+
+</div>
+
+<div class="bg-[#FFFFFF] flex flex-col items-center rounded-2xl"> <!-- activity log -->
+ 
+ <div class="flex gap-4 pt-3">  <!-- act -->
+<img src="assets/activity.png" alt="">
+<span class="text-base font-medium">Activity Log</span>
+
+ </div>
+ 
+
+
+
+<br>
+<button id="ch" class="btn rounded-lg  font-medium bg-[#3752FD] text-[#FFFFFF]">Clear History</button>
+<div id="lc"></div>
+</div>
+
+
+
+ </div> 
+
+
+</div>
+  
+</div>
+
+  
+
+
+</section>
+
+
+<script src="disco.js"></script>
+<script src="vur.js"></script>
+<script src="realcom.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>
